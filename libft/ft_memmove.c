@@ -1,30 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 14:23:05 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/09/27 10:24:30 by mide-lim         ###   ########.fr       */
+/*   Created: 2024/10/01 10:09:38 by mide-lim          #+#    #+#             */
+/*   Updated: 2024/10/01 11:03:20 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memset(void *s, int c, size_t n)
+void	*memmove(void *dest, const void *src, size_t n)
 {
+	unsigned char *d = (unsigned char *)dest;
+	unsigned char *s = (const unsigned char *)src;
 	size_t	i;
 
-	i = strlen(s);
-	if ( i < n )
-		return (err);
-	i = 0;
-	while (s[i] = '\0')
+	if (d > s && < s + n)
 	{
-		s[i] = c;
-		i++;
+		i = n;
+		while (i > 0)
+		{
+			d[i - 1] = s[i - i];
+			i--;
+		}
+	} else {
+		i = 0;
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
-	return (s);
-}
+	return (dest);
 
+}
