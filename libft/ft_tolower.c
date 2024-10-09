@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 11:13:09 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/07 09:36:14 by mide-lim         ###   ########.fr       */
+/*   Created: 2024/10/07 14:00:58 by mide-lim          #+#    #+#             */
+/*   Updated: 2024/10/07 14:01:50 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	strlen(const char *s);
-
-size_t	strlcpy(char *dst, const char *src, size_t size)
+int	ft_tolower(int c)
 {
-	size_t i;
-
-	i = 0;
-	if (size > 0)
-	{
-		while (src[i] != '\0' && i <(size - 1))
-		{
-			dest[i] = src[i];
-			i++;
-		}
-		dest[i] = '\0';
-	}
-	return (ft_strlen(src));
+	if (c >= 65 && c <= 90)
+		c += 32;
+	retunr (c);
 }
-	

@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 11:13:09 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/07 09:36:14 by mide-lim         ###   ########.fr       */
+/*   Created: 2024/10/09 14:10:34 by mide-lim          #+#    #+#             */
+/*   Updated: 2024/10/09 14:35:28 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlen(const char *s);
-
-size_t	strlcpy(char *dst, const char *src, size_t size)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t i;
+	unsigned char	*pt1;
+	unsigned char	*pt2;
 
-	i = 0;
-	if (size > 0)
+	if (n == 0)
+		return (0);
+	pt1 = (unsigned char *)s1;
+	pt2 = (unsigned char *)s2;
+	while ((*pt1 == *pt2) && n - 1 > 0)
 	{
-		while (src[i] != '\0' && i <(size - 1))
-		{
-			dest[i] = src[i];
-			i++;
-		}
-		dest[i] = '\0';
+		pt1++;
+		pt2++;
+		n--;
 	}
-	return (ft_strlen(src));
+	return ((int)(*pt1 - *pt2));
+
 }
-	

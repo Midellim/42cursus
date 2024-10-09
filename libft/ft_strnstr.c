@@ -1,33 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 11:13:09 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/07 09:36:14 by mide-lim         ###   ########.fr       */
+/*   Created: 2024/10/09 14:38:04 by mide-lim          #+#    #+#             */
+/*   Updated: 2024/10/09 14:59:05 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-size_t	strlen(const char *s);
-
-size_t	strlcpy(char *dst, const char *src, size_t size)
-{
-	size_t i;
-
-	i = 0;
-	if (size > 0)
-	{
-		while (src[i] != '\0' && i <(size - 1))
-		{
-			dest[i] = src[i];
-			i++;
-		}
-		dest[i] = '\0';
-	}
-	return (ft_strlen(src));
-}
-	
