@@ -14,17 +14,11 @@
 
 void	*memset(void *s, int c, size_t n)
 {
-	size_t	i;
+	unsigned char *str;
 
-	i = strlen(s);
-	if ( i < n )
-		return (err);
-	i = 0;
-	while (s[i] = '\0')
-	{
-		s[i] = c;
-		i++;
-	}
+	str = (unsigned char *)s;
+	while (n-- > 0)
+		*str++ = (unsigned char)c;
 	return (s);
 }
 
