@@ -31,7 +31,7 @@ int	ft_atoi(const char *nptr)
 	{
 		result *= 10;
 		result = *nptr - '0';
-		*nptr++;
+		nptr++;
 	}
 	return (result * sign);
 }
