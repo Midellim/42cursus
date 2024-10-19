@@ -24,6 +24,7 @@ SOURCES += ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c
 #SOURCES += ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c
 #SOURCES += ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c
 #SOURCES += ft_putendl_fd.c ft_putnbr_fd.c
+SOURCES += ft_strjoin.c ft_strtrim.c
 OBJECTS = $(SOURCES:.c=.o)
 
 all: $(NAME)

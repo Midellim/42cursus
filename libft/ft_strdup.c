@@ -26,6 +26,7 @@ char	*ft_strdup(const char *s)
         return (NULL);
     //ft_memcpy(dest, s, len);
     //dest[len] = '\0';
+    i = 0;
     while (i < len + 1)
     {
         dest[i] = s[i];
