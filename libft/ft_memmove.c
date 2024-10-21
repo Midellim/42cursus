@@ -6,7 +6,7 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:09:38 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/01 11:03:20 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:46:47 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char *d;
-	unsigned char *s;
+	unsigned char	*d;
+	unsigned char	*s;
 
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
@@ -32,5 +32,4 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			*--d = *--s;
 	}
 	return (dest);
-
 }

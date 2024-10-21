@@ -6,7 +6,7 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 21:21:52 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/20 21:30:40 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:43:53 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ static size_t	ft_nbr_len(long int nbr)
 char	*ft_itoa(int nbr)
 {
 	long int	nbr_;
-	size_t	len;
-	size_t	i;
-	char	*s;
+	size_t		len;
+	size_t		i;
+	char		*s;
 
 	nbr_ = nbr;
 	len = ft_nbr_len(nbr);

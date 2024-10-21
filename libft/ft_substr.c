@@ -6,15 +6,11 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 09:20:14 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/16 09:29:54 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:33:09 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *string);
-void	*ft_calloc(size_t nmemb, size_t size);
-size_t	strlcpy(char *dest, const char *src, size_t size);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

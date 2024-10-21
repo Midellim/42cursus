@@ -6,7 +6,7 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 17:09:52 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/09 10:48:33 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:41:49 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t 	i;
+	size_t	i;
 
 	i = 0;
 	if (n == 0)

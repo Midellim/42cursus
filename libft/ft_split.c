@@ -6,7 +6,7 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 17:05:21 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/20 19:50:33 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:35:22 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ static size_t	ft_count_words(char const *s, char c)
 			i++;
 		if (s[i])
 		{
-			
 			while (s[i] != c && s[i])
 				i++;
 			count++;
@@ -67,6 +66,7 @@ static char	**ft_fill_split(const char *s, char c, char **list)
 				ft_free(list);
 				return (NULL);
 			}
+			// return (ft_free(list), NULL);
 			start += wrds - 1;
 			split++;
 		}

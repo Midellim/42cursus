@@ -6,7 +6,7 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 10:39:44 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/01 10:07:31 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:35:46 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char *d;
-	char *s;
+	char	*d;
+	char	*s;
 	size_t	i;
 
 	d = (char *)dest;

@@ -6,7 +6,7 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 10:49:32 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/10 11:59:28 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:45:17 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	sign;
-	int	result;
+	int		result;
+	int		sign;
 	size_t	i;
 
 	i = 0;
@@ -24,7 +24,7 @@ int	ft_atoi(const char *nptr)
 	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
-	{	
+	{
 		if (nptr[i] == '-')
 			sign = sign * -1;
 		i++;

@@ -6,7 +6,7 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:16:09 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/08 17:08:15 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:32:26 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 		i++;
-	while (i >= 0 )
+	while (i >= 0)
 	{
 		if (s[i] == (char)c)
 			return ((char *)(s + i));

@@ -6,13 +6,11 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 10:25:42 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/09/27 10:38:30 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:24:07 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t n);
 
 void	ft_bzero(void *s, size_t n)
 {

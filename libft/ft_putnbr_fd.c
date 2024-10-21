@@ -6,13 +6,13 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 02:24:24 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/21 02:32:05 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:28:22 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	long int	nbr;
 

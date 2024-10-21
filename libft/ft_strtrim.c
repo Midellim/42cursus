@@ -6,7 +6,7 @@
 /*   By: mide-lim <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 01:00:47 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/19 05:11:19 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:40:40 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	len = end - start;
 	tr_str = (char *)ft_calloc(len + 1, 1);
-	if(!tr_str)
-		return(NULL);
+	if (!tr_str)
+		return (NULL);
 	ft_strlcpy(tr_str, &s1[start], len + 1);
 	return (tr_str);
 }

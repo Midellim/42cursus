@@ -6,7 +6,7 @@
 /*   By: mide-lim <mide-lim@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 14:10:34 by mide-lim          #+#    #+#             */
-/*   Updated: 2024/10/09 14:35:28 by mide-lim         ###   ########.fr       */
+/*   Updated: 2024/10/21 14:33:50 by mide-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,4 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		n--;
 	}
 	return ((int)(*pt1 - *pt2));
-
 }
